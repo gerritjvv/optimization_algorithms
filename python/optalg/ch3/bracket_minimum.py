@@ -20,8 +20,7 @@ def step_decrease(f: Callable[[Any], Any], x, step=1e-2, step_multiplier=2, iter
     for i in range(0, iteration_limit):
         x += step
         y_step = f(x)
-
-        if abs(y_step) > abs(y_prev):
+        if y_step > y_prev:
             # we leave the x overstep here because we bracket over the minimum, otherwise we might under shoot it.
             return x, step, i
 
