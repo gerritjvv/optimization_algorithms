@@ -76,7 +76,7 @@ if __name__ == "__main__":
     end = time.time() * 1000
 
     print(f"""
-    Function x**2 + x + 1, Diff: 3x^2 + 2x + 1
+    Function x^3 + 2x^2 + x + 3, Diff: 3x^2 + 4x + 1
     Diff == zero at x = -1/3 
     Function bracket at:
     
